@@ -141,6 +141,23 @@ h2 {
     max-width: 750px;
     color: #555;
 }
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.mypic {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 /* ===== PROJECTS ===== */
 .project-grid {
@@ -239,6 +256,15 @@ footer {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
 
+    .about-content {
+        flex-direction: column;
+    }
+
+    .mypic {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
     .nav-container {
         flex-direction: column;
         gap: 15px;
